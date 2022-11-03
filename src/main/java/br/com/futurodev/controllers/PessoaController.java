@@ -34,8 +34,8 @@ public class PessoaController {
 
     @DeleteMapping(value = "/")
     @ResponseBody
-    public ResponseEntity<String> delete (@RequestParam Long idUsuario) {
-        pessoaRepository.deleteById(idUsuario);
+    public ResponseEntity<String> delete (@RequestParam Long idPessoa) {
+        pessoaRepository.deleteById(idPessoa);
         return new ResponseEntity<String>("Usuário deletado com sucesso!", HttpStatus.OK);
 
     }
